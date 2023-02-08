@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "tarea-5_pygame-1",
+			"path": "../../../../Programacion/GitHub/tarea-5_pygame-1"
+		},
+		{
+			"name": "learn-arcade-work",
+			"path": "../../../../Programacion/GitHub/learn-arcade-work"
+		},
+		{
+			"name": "MS_iot_telemetry",
+			"path": "../../MS_iot_telemetry"
+		},
+		{
+			"name": "test_esp82.66",
+			"path": "../../test_esp82.66"
+		},
+		{
+			"name": "intermitente",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
