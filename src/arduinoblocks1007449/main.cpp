@@ -6,6 +6,7 @@
 #include "ABlocksIOTMQTTESP8266.h"
 #include <HardwareSerial.h>
 #include "ABlocks_DHT.h"
+#include "priv_datareal.h"
 
 double humedad;
 double temperatura;
