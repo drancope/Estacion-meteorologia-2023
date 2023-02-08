@@ -13,7 +13,7 @@
 #endif
 #ifdef INSTI
   const String ssidd = "Andared_Corporativo";
-  const String userss = "18001147-sala-af"
+  const String userss = "18001147-sala-af";
   const String passs = "af12.jdm";
 #define BROKER "192.168.13.169"
 #endif
