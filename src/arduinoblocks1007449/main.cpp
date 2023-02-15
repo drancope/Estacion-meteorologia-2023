@@ -6,7 +6,7 @@
 #include "ABlocksIOTMQTTESP8266.h"
 #include <HardwareSerial.h>
 #include "ABlocks_DHT.h"
-#include "priv_datareal.h"
+//#include "priv_datareal.h"
 
 double humedad;
 double temperatura;
@@ -71,7 +71,7 @@ void subir_a_mosquitto() {
 	ABlocksIOT.Publish(String("co"), String(co_mg_m3));
 }
 void detener_medicion_nn_minutos() {
-	for (int count = 0; count < (60 * 10); count++) { // segundos * minutos
+	for (int count = 0; count < (60 * 1); count++) { // segundos * minutos
 		delay(1000);
 	}
 }
