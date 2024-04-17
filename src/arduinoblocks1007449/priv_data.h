@@ -7,14 +7,14 @@
 
 
 #ifdef CASA
-  const String ssidd = "your_local_ssid";
-  const String passs = "your_local_pass";
-#define BROKER "192.168.0.localserver"
+  #define SSIDD "your_local_ssid"
+  #define PASSS "your_local_pass"
+  #define BROKER "192.168.0.localserver"
 #endif
 #ifdef INSTI
-  const String ssidd = "your_production_LAN_ssid";
-  const String passs = "your_production_LAN_pass";
-#define BROKER "192.168.productionserver"
+  #define SSIDD "your_production_LAN_ssid"
+  #define PASSS "your_production_LAN_pass"
+  #define BROKER "192.168.productionserver"
 #endif
 #ifdef TEST
 const String ID = "prueba_13243-ojisjei-owieru3-2";
@@ -26,3 +26,4 @@ const String ID = "your_unique_id";
 const String CLIENT_NAME = ID + "client";
 const String CLIENT_TELEMETRY_TOPIC = ID + "/telemetry";
 #endif
+#define MAC "your_mac_number" //if needed someday

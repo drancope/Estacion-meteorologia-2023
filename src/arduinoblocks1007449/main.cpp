@@ -6,20 +6,20 @@
 #include "ABlocksIOTMQTTESP8266.h"
 #include <HardwareSerial.h>
 #include "ABlocks_DHT.h"
-//#include "priv_datareal.h"
+#include "priv_datareal.h"
 
 double humedad;
 double temperatura;
 double no2_ug_m3;
 double particulas_ug_m3;
 double co_mg_m3;
-const char mqtt_broker[]="10.20.1.1";
+const char mqtt_broker[]=BROKER;
 const int mqtt_port=1883;
 const char mqtt_user[]="estacion";
 const char mqtt_pass[]="meteorologica";
-const char mqtt_clientid[]="estacion";
-const char mqtt_wifi_ssid[]="raspi-iot";
-const char mqtt_wifi_pass[]="usuario-iot12.";
+const char mqtt_clientid[]="estacion2";
+const char mqtt_wifi_ssid[]= SSIDD;
+const char mqtt_wifi_pass[]= PASSS;
 HardwareSerial &mqtt_esp8266_serial=Serial;
 ESP8266 mqtt_esp8266_wifi(&mqtt_esp8266_serial);
 char mqtt_payload[64];

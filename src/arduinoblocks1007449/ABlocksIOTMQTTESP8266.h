@@ -51,6 +51,10 @@ public:
 			ABLOCKSIOT_LOG("Failed to set STA mode");
 			return false;
 		}
+		if (!_esp8266->setStationMac("8e:dd:ee:fd:95:e0")) {
+			ABLOCKSIOT_LOG("Fallo al establecer MAC");
+			return false;
+		}
 		if (!_esp8266->joinAP(ssid, pass)) {
 			ABLOCKSIOT_LOG("Failed to connect WiFi: %s", ssid);
 			return false;
