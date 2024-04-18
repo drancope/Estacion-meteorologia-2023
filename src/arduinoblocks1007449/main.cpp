@@ -64,11 +64,11 @@ void mqtt_subscribe(){
 }
 
 void subir_a_mosquitto() {
-	ABlocksIOT.Publish(String("temperatura"), String(temperatura));
-	ABlocksIOT.Publish(String("humedad"), String(humedad));
-	ABlocksIOT.Publish(String("no2"), String(no2_ug_m3));
-	ABlocksIOT.Publish(String("particulas"), String(particulas_ug_m3));
-	ABlocksIOT.Publish(String("co"), String(co_mg_m3));
+	ABlocksIOT.Publish(String("estacion2/temperatura"), String(temperatura));
+	ABlocksIOT.Publish(String("estacion2/humedad"), String(humedad));
+	ABlocksIOT.Publish(String("estacion2/no2"), String(no2_ug_m3));
+	ABlocksIOT.Publish(String("estacion2/particulas"), String(particulas_ug_m3));
+	ABlocksIOT.Publish(String("estacion2/co"), String(co_mg_m3));
 }
 void detener_medicion_nn_minutos() {
 	for (int count = 0; count < (60 * 1); count++) { // segundos * minutos
