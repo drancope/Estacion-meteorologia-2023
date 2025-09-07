@@ -16,7 +16,7 @@
 
 #include <stdio.h>
 #include <stdarg.h>
-
+#define ABLOCKSTIO_PRINT Serial
 #ifdef ABLOCKSIOT_PRINT
 	static void log(const char* ABLOCKSIOT_PROGMEM message, ...)
 	{
